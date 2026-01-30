@@ -1,11 +1,14 @@
-name:Simple integration Test
+name: Simple Integration Test
+
 on:
   push:
+
 jobs:
- test:
-   runs-on:ubuntu-latest
-  steps:
-    -uses:actions/checkout@v4
-    -run: python --version
-    -run: pip install -r requirements.txt
-    -run: pytest
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - run: python --version
+      - run: pip install -r requirements.txt
+      - run: pytest
