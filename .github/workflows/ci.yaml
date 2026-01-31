@@ -1,3 +1,7 @@
+name: matrix ci
+on:
+  push:
+
 jobs:
   test:
     runs-on: ubuntu-latest
