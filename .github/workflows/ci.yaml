@@ -41,7 +41,8 @@ jobs:
 
       - name: Run tests
         run: pytest
-      - name: intentional error missing file opening
+      - name: intentional permission denied error
         run: |
-          cat config.txt
+          echo 'echo "hello from script" '> test
+
 
