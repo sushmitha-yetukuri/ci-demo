@@ -41,7 +41,7 @@ jobs:
 
       - name: Run tests
         run: pytest
-      - name: Intentional error - command not found
+      - name: intentional error missing file opening
         run: |
-          python --versn
+          cat config.txt
 
